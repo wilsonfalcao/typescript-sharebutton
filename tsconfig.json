@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "es2017",                                  /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
+    "module": "es6",                                /* Specify what module code is generated. */
+    //"rootDir": "./src",                     /Comentado essa linha por imprimir erros com a execução do webpack
+    "baseUrl": "./",                                  /* Specify the base directory to resolve non-relative module names. */
+    "paths": {
+      "@entities/*":["./src/entities/*"],
+      "@dependencies/*":["./src/dependencies/*"],
+      "@pages/*":["./src/pages/*"]
+    },                                /* Allow multiple folders to be treated as one when resolving modules. */
+    "typeRoots": [
+      "./node_modules/@types",
+      "./src/@types"
+    ],
+    "allowJs": true,                              /* Specify a file that bundles all outputs into one JavaScript file. If `declaration` is true, also designates a file that bundles all .d.ts output. */
+    "outDir": "./dist",            /* Allow 'import x from y' when a module doesn't have a default export. */
+    "esModuleInterop": true,                      /* Disable resolving symlinks to their realpath. This correlates to the same flag in node. */
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,                     /* Check that the arguments for `bind`, `call`, and `apply` methods match the original function. */
+    "strictPropertyInitialization": false,                    /* Skip type checking .d.ts files that are included with TypeScript. */
+    "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
+  }
+}
